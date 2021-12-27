@@ -1,3 +1,3 @@
 # rsschool-cv
 
-[My-cv.md](https://GITHUB-USERNAME.github.io/rsschool-cv/cv)
+[My-cv.md](https://oleegg.github.io/rsschool-cv/cv)
