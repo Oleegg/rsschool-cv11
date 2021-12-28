@@ -12,27 +12,55 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+
 }
 
-.wrapper {
-background-color: antiquewhite;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkcyan;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
-background-color: burlywood;
+
 } 
+
+.profile {
+
+}
+
+.profile-text {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.profile-text h3 {
+   font-size: 16px;
+}
+
+.section {
+    width: 48%;
+    border-bottom: 2px dotted #666666;
+
+}
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    line-height: 50px;
+    list-style-type: none;
 }
 
 .nav-list li {
@@ -44,14 +72,14 @@ background-color: burlywood;
     text-decoration: none;
   }
 
-.main-header-text {
+.nav {
 background-color: aquamarine;
 }
 
-.container {
-    background-color: darkcyan;
-    max-width: 1440px;
-    margin: 0 auto;
+.my-pfoto {
+    width: 200px;
+    object-fit: contain;
+    border-radius: 20px;
 }
 
 .code {
