@@ -3,10 +3,21 @@
      src: url("assets/fonts/Roboto.ttf");
    }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
+    min-height: 100vh;
     margin: 0;
-    padding: 20px;
-    
+    padding: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -17,12 +28,30 @@ background-color: antiquewhite;
 background-color: burlywood;
 } 
 
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 50px;
+}
+
+.nav-list li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+  }
+
 .main-header-text {
 background-color: aquamarine;
 }
 
-.content {
+.container {
     background-color: darkcyan;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .code {
