@@ -1,4 +1,38 @@
+@font-face {
+    font-family: Roboto;
+     src: url("assets/fonts/Roboto.ttf");
+   }
+
 body {
     margin: 0;
     padding: 20px;
+    
+}
+
+.wrapper {
+background-color: antiquewhite;
+}
+
+.header {
+background-color: burlywood;
+} 
+
+.main-header-text {
+background-color: aquamarine;
+}
+
+.content {
+    background-color: darkcyan;
+}
+
+.code {
+    background-color: darkseagreen;
+}
+
+.main-footer {
+    background-color: dimgrey;
+}
+
+footer {
+    background-color: indianred;
 }
