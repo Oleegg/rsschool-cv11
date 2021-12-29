@@ -14,22 +14,24 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-
+    flex-basis: 50%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: darkcyan;
-    max-width: 1440px;
-    margin: 0 auto;
+    justify-content: space-between;
+    background-color: rgb(154, 74, 156);
+    
 }
 
 .header {
@@ -37,7 +39,8 @@ body {
 } 
 
 .profile {
-
+    justify-content: center;
+    text-align: center;
 }
 
 .profile-text {
@@ -51,9 +54,9 @@ body {
 }
 
 .section {
-    width: 48%;
-    border-bottom: 2px dotted #666666;
-
+    width: 50%;
+    border: 2px dotted #666666;
+    min-width: 320px;
 }
 
 .nav-list {
@@ -73,11 +76,12 @@ body {
   }
 
 .nav {
+    width: 100%;
 background-color: aquamarine;
 }
 
 .my-pfoto {
-    width: 200px;
+    width: 100px;
     object-fit: contain;
     border-radius: 20px;
 }
@@ -91,5 +95,18 @@ background-color: aquamarine;
 }
 
 footer {
-    background-color: indianred;
+    background-color: rgb(172, 143, 143);
 }
+
+.footer {
+    background-color: bisque;
+    
+    align-items: center;
+}
+
+@media screen and (max-width: 722px) {
+    .section {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
