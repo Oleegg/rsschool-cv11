@@ -95,13 +95,14 @@ background-color: aquamarine;
 }
 
 footer {
-    background-color: rgb(172, 143, 143);
+    
 }
 
 .footer {
     background-color: bisque;
-    
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 @media screen and (max-width: 722px) {
