@@ -12,6 +12,10 @@ html {
     
 }
 
+.header {
+    background-color: #fff2bab7
+}
+
 .titles2 {
     margin-left: 60px;
 }
@@ -25,7 +29,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     flex-basis: 49%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     
 }
@@ -41,7 +45,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #82a0a5;
-    padding: 10px;
+    padding: 0 30px;
 }
 
 .profile {
@@ -61,8 +65,8 @@ body {
 
 .section {
     width: 50%;
-    /* border-bottom: 5px double #666666; */
-    min-width: 300px;
+    background-color: #82a0a5;
+    min-width: 350px;
 }
 
 .nav-list {
@@ -85,11 +89,10 @@ body {
 
 .nav {
     width: 100%;
-    background-color: #fff2bab7;
 }
 
 .nav-item a:hover  {
-    color: #fff6f6;
+    color: #571368a6;
 }
 
 .project a:after {
@@ -105,7 +108,7 @@ body {
 
 .project a:hover:after,
 .project a:focus:after {
-	width: 290px; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 290px; 
 }
 
 .my-pfoto {
@@ -141,7 +144,7 @@ body {
     }
 
 .project a:visited {
-    color: rgb(19, 9, 36);
+    color: #482352);
 }
 
 .project::before {
@@ -191,10 +194,6 @@ body {
     .nav-list{
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .nave-link {
-        
     }
 }
 
