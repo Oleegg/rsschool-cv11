@@ -12,10 +12,6 @@ html {
     background-color: chartreuse;
 }
 
-.btn {
-    display: none;
-}
-
 .titles2 {
     margin-left: 60px;
 }
@@ -25,13 +21,20 @@ body {
     flex-direction: column;
     justify-content:space-between;
     min-height: 100vh;
-    margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     flex-basis: 49%;
     max-width: 1440px;
     margin: 0 auto;
+    
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(154, 74, 156);
     
 }
 
@@ -65,8 +68,8 @@ body {
 
 .section {
     width: 50%;
-    border: 2px dotted #666666;
-    min-width: 320px;
+    /* border-bottom: 5px double #666666; */
+    min-width: 300px;
 }
 
 .nav-list {
@@ -77,17 +80,17 @@ body {
 }
 
 .nav-list li {
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 18px;
+    padding: 0 10px;
 }
 
-.nav-list li a {
+.nave-link {
     text-decoration: none;
   }
 
 .nav {
     width: 100%;
-background-color: aquamarine;
+    background-color: aquamarine;
 }
 
 .my-pfoto {
@@ -96,8 +99,24 @@ background-color: aquamarine;
     border-radius: 20px;
 }
 
-.code-title {
-    
+.list-contacts {
+    list-style-type: none;
+}
+
+.list-contacts li::before {
+    content: "♦ ";
+}
+
+.pre-code {
+    margin: 0 20px;
+}
+
+.project {
+    list-style-type: none;
+}
+
+.project::before {
+    content: '© ';
 }
 
 .code {
@@ -116,16 +135,17 @@ background-color: aquamarine;
     background-color: bisque;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 722px) {
     .section {
         width: 100%;
         justify-content: center;
-        text-align: center;
-        background-color: chocolate;
-        
+        align-items: stretch;
+        /* background-color: chocolate; */
+        padding: 0 20px;
     }
    
     .footer a {
@@ -137,31 +157,35 @@ background-color: aquamarine;
         width: 80px;
     }
 
-    .nav {
-        display: none;
-            }
-
-    li.done {
-        background: #CCFF99;
-      }
-
-    .container-nav {
-        height: 50px;
-        flex-direction: row;
-        justify-content: right;
-        
+    .nav-list li {
+        margin: 0px;
     }
 
-    .btn {
-        display: inline-block;
-        position: relative;
-        align-items: flex-end;
-        margin: 10px;
+    .nave-link {
+        font-size: 15px;
+    }
+       
+}
+
+@media screen and (max-width: 550px) {
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .btn:hover .nav {
-        display: block;
+    .nave-link {
         
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nave-link {
+        font-size: 10px;
     }
 }
 
