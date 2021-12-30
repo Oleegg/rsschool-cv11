@@ -12,6 +12,10 @@ html {
     background-color: chartreuse;
 }
 
+.btn {
+    display: none;
+}
+
 .titles2 {
     margin-left: 60px;
 }
@@ -123,7 +127,7 @@ background-color: aquamarine;
         background-color: chocolate;
         
     }
-
+   
     .footer a {
         font-size: 15px;
         
@@ -135,6 +139,28 @@ background-color: aquamarine;
 
     .nav {
         display: none;
+            }
+
+    li.done {
+        background: #CCFF99;
+      }
+
+    .container-nav {
+        height: 50px;
+        flex-direction: row;
+        justify-content: right;
+        
+    }
+
+    .btn {
+        display: inline-block;
+        position: relative;
+        align-items: flex-end;
+        margin: 10px;
+    }
+
+    .btn:hover .nav {
+        display: block;
         
     }
 }
