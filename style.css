@@ -9,7 +9,6 @@
 
 html {
     scroll-behavior: smooth; 
-    
 }
 
 .header {
@@ -45,7 +44,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #82a0a5;
-    padding: 0 30px;
+    padding: 15px 30px;
 }
 
 .profile {
