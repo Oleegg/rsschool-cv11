@@ -16,3 +16,4 @@ function closeMunu() {
     burger.classList.remove('open')
     navList.classList.remove('open')
 }
+console.log('1')
