@@ -1,7 +1,7 @@
 @font-face {
     font-family: Roboto;
-     src: url("assets/fonts/Roboto.ttf");
-   }
+    src: url("assets/fonts/Roboto.ttf");
+}
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,7 @@ html {
 }
 
 .titles2 {
-    margin-left: 60px;
+    margin-top: 25px;
 }
 
 body {
@@ -28,11 +28,14 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     flex-basis: 49%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
+    max-width: 1400px;
+    margin: 0 auto;    
 }
 
+.icon-logo{
+    width: 20px;
+    height: 20px;    
+}
 .container-nav {
     display: flex;
     flex-wrap: wrap;
@@ -43,13 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #82a0a5;
-    padding: 15px 30px;
-}
-
-.profile {
-    justify-content: center;
-    text-align: center;
+    background-color: #ffffff;      
 }
 
 .profile-text {
@@ -59,13 +56,16 @@ body {
 }
 
 .profile-text h3 {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 .section {
     width: 50%;
-    background-color: #82a0a5;
+    padding: 15px 0;
+    background-color: #ffffff;
     min-width: 350px;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-list {
@@ -77,56 +77,98 @@ body {
 
 .nav-list li {
     font-size: 18px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .nave-link {
     text-decoration: none;
-    cursor: grab;
+    cursor: pointer;
     color: #000000;
 }
 
 .nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
     width: 100%;
 }
 
 .nav-item a:hover  {
-    color: #571368a6;
+    color: #0d060fa6;
 }
 
-.project a:after {
-    display: block;
-	position: absolute;
-	right: 50; 
-	width: 0;
-	height: 3px; 
-	background-color: #508540; 
-	content:"";
-	transition: width 1s ease-out
+.list-active__rest{
+    list-style: none;
+}
+.list-active__rest li{
+    left: 20px;
+    text-align: start;
 }
 
-.project a:hover:after,
-.project a:focus:after {
-	width: 290px; 
+.burger{        
+    position: relative;
+    width: 50px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    z-index: 10;
+    cursor: pointer;    
+    display: none;
+}
+
+.burger:before,.burger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: rgb(105, 9, 9);
+    height: 3px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.burger::before {
+    bottom: 0;
+}
+.burger span{
+    position: absolute;
+    background-color: rgb(100, 30, 30);
+    width: 100%;
+    height: 3px;
+    top: 13px;
+    right: 0;
+    transition: 0.5s;
+}
+.code-title{
+    margin: 18px 0 5px 20px;
 }
 
 .my-pfoto {
     width: 100px;
     object-fit: contain;
     border-radius: 20px;
-    }
+}
 
 .list-contacts {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20%;
 }
 
 .list-contacts li::before {
     content: "♦ ";
 }
 
+.skills__list{
+    list-style: none;
+}
+
 .pre-code {
     margin: 0 20px;
     color: #8a594c;
+    background-color: rgba(204, 204, 204, 0.555);
 }
 
 .project {
@@ -137,17 +179,21 @@ body {
     text-decoration: none;
 }
 
-.project a:hover {
-    display: inline-block;
-    color: #00000049;
-    }
-
 .project a:visited {
-    color: #482352);
+    color: #bc14eb;
 }
 
 .project::before {
     content: '© ';
+}
+
+.project a:hover {
+    display: inline-block;
+    color: #020202f5;
+}
+
+.list-languages{
+    list-style: none;
 }
 
 .footer a {
@@ -162,49 +208,125 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width: 722px) {
+.github{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 960px) {
     .section {
-        width: 100%;
+        width: 100%;        
         justify-content: center;
-        align-items: stretch;
-        padding: 0 20px;
-    }
-   
+        align-items: center;
+        padding: 20px;
+    }    
+    .section-skills,
+    .section-hobby,    
+    .section-education,
+    .section-languages{
+        width: 50%;
+    }    
     .footer a {
         font-size: 15px;
-        
     }
-
     .footer img {
         width: 80px;
     }
-
     .nav-list li {
         margin: 0px;
     }
-
     .nave-link {
-        font-size: 15px;
+        font-size: 17px;
     }
-       
 }
 
-@media screen and (max-width: 550px) {
-    .nav-list{
+@media screen and (max-width: 830px){
+    .nav-list li{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .section{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+    }
+    .burger{
         display: flex;
-        flex-wrap: wrap;
+        margin: 20px;
     }
-}
-
-@media screen and (max-width: 485px) {
-    .nav-list{
+    .nav-list{      
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;  
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed; 
+        background-color: #ffffff;
+        top: -20px;
+        right: -105%;   
+        padding: 40px 30%;
+        width: 100%;
+        height: 105vh;      
+        overflow: auto; 
+        transition: 0.5s;             
+    }
+    
+    .list-contacts{
+        margin: 0;
+    }
+    .project{
+        margin-left: 0;
+        text-align: start;
+    }    
+    .nav-list li{
+        margin-bottom: 20px;
+    }
+    
+    .nave-link{
+        font-size: 30px;
+        line-height: 70px;        
+    }   
+    .open{
+        right: 0;
+        transition: 0.5s;
+    }  
+    .open::after {
+        transform: rotate(-135deg) ;
+        bottom: 20px;
+        left: 6px;
+        height: 2px;
+        transition: 0.5s;
+    }
+    .open::before {
+        transform: rotate(135deg) ;
+        bottom: 20px;
+        left: 6px;
+        height: 2px;
+        transition: 0.5s;
     }
 
-    .nave-link {
-        font-size: 10px;
+    .open span {
+        transform: rotate3d(1, 1, 1,  -120deg);
+        transition: 0.5s;
+    }  
+}
+@media (max-width: 440px){
+    .pre-code{
+        display: inline;
+        background-color: #ffffff;
+        font-size: 14px;
+    }
+    .section{
+        min-width: 300px;
+    }
+    .project{
+        font-size: 16px;
+    }
+    .list-contacts{
+        font-size: 14px;
     }
 }
+
+
 
 
