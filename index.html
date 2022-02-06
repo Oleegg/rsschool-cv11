@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sianko Aleh CV</title>
+    <title>Sianko Oleg CV</title>
+    <link rel="shortcut icon" href="./assets/svg/resume_business_cv_work_job_curriculum_icon_175611.svg"
+        type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -36,17 +38,20 @@
                         <a class="nave-link" href="#languages">Languages</a>
                     </li>
                 </ul>
+                <div class="burger">
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
     <main class="main">
         <div class="container">
-            <section class="profile section">
-                <h1>Sianko Aleh </h1>
+            <section class="section section-pfoto">
+                <h1>Sianko Oleg </h1>
                 <img class="my-pfoto" src="./assets/my-pfoto/IMG_20191231_195230.jpg" alt="my-pfoto">
                 <h3>Junior Front-end Developer</h3>
             </section>
-            <section class="section">
+            <section class="section section-contacts">
                 <h2 class="titles2" id="contacts">Contacts</h2>
                 <ul class="list-contacts">
                     <li>Minsk Belarus</li>
@@ -58,7 +63,8 @@
             <section class="section">
                 <h2 class="titles2" id="summary">Summary</h2>
                 <span class="summary-text">
-                    Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with over 10
+                    Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with over
+                    10
                     years of experience.
                     I had to quit my job for several reasons. Now I'm studying to be a programmer.
                     In my work, I strive to thoroughly understand the task at hand in order to complete it as well as
@@ -66,11 +72,11 @@
                     I am married, and I have two sons.
                 </span>
             </section>
-            <section class="section">
+            <section class="section section-hobby">
                 <h2 class="titles2" id="hobby">Hobby</h2>
-                <ul>
+                <ul class="list-contacts">
                     <li>Active rest
-                        <ul>
+                        <ul class="list-active__rest">
                             <li>kayaks</li>
                             <li>bicycles</li>
                             <li>volleyball</li>
@@ -79,44 +85,63 @@
                     <li>computer games</li>
                 </ul>
             </section>
-            <section class="section">
+            <section class="section section-skills">
                 <h2 class="titles2" id="skills">Skills and Project</h2>
-                <ul>
+                <ul class="list-active__rest">
                     <li>Independent study:
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                            <li>Git</li>
-                            <li>basics React JS</li>
+                        <ul class="list-contacts">
+
+                            <li><svg class="icon-logo">
+                                    <use xlink:href="./assets/svg/sprite.svg#html"></use>
+                                </svg> HTML</li>
+
+                            <li><svg class="icon-logo">
+                                    <use xlink:href="./assets/svg/sprite.svg#css"></use>
+                                </svg> CSS</li>
+
+                            <li><svg class="icon-logo">
+                                    <use xlink:href="./assets/svg/sprite.svg#js"></use>
+                                </svg> JS</li>
+
+                            <li><svg class="icon-logo">
+                                    <use xlink:href="./assets/svg/sprite.svg#git"></use>
+                                </svg> Git</li>
+
+                            <li><svg class="icon-logo">
+                                    <use xlink:href="./assets/svg/sprite.svg#react"></use>
+                                </svg> basics React js</li>
                         </ul>
                     </li>
                 </ul>
                 <ul>
-                    <li class="project"><a href="https://github.com/Oleegg/rsschool-cv/blob/rsschool-cv-html/cv.md">So
-                            far the only projectcv(My CV.md)</a>
+                    <li class="project"><a
+                            href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/portfolio/">Portfolio (RS
+                            school-progect + custom video player)</a>
                     </li>
                 </ul>
             </section>
-            <section class="section">
+            <section class="section section__code">
                 <h2 class="titles2" id="code">Code</h2>
-                <p class="code-title">Beginner Series #5 Triangular Numbers 7kyu</p>
+                <p class="code-title">WeIrD StRiNg CaSe 6kyu</p>
                 <pre class="pre-code">
-                    <code>
-function isTriangular(t) {
-for (let n = 1; n &lt;= t; n++){
-let x=n * (n + 1) / 2 
-} 
-return (x===t) 
-}
+                    <code class="code__text">
+function toWeirdCase(string){
+    let x = string.split(' ')
+    let y = x.map(element => 
+    element.split('')
+    .map((el, i) => i % 2 === 0 ?
+    el.toUpperCase()
+    : el.toLowerCase()).join(''))
+    return y.join(' ')
+    }
                     </code>
                 </pre>
             </section>
-            <section class="section">
+            <section class="section section-education">
                 <h2 class="titles2" id="education">Education</h2>
                 <p>College of mehenical-technology, Pedagogical university.</p>
             </section>
-            <section class="section">
+            <section class="section section-languages">
                 <h2 class="titles2" id="languages">Languages</h2>
                 <ul class="list-languages">
                     <li>Russian - native</li>
@@ -128,8 +153,7 @@ return (x===t)
     <footer>
         <div class="container footer">
             <p>2021 <a class="github" href="https://github.com/Oleegg">Oleegg</a></p>
-            <a class="logo-link" href="https://rs.school/js/"><img class="logo" width="150"
-                    src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
