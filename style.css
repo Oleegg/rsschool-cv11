@@ -176,7 +176,9 @@ body {
 .list-contacts li::before {
     content: "♦ ";
 }
-
+.list-contacts li{
+    margin: 5px;
+}
 .skills__list{
     list-style: none;
 }
