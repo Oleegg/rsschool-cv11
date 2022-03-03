@@ -12,7 +12,7 @@ html {
 }
 
 .header {
-    background-color: #fff2bab7
+    background-color: #bebebe69
 }
 
 .titles2 {
@@ -34,7 +34,7 @@ body {
 
 .icon-logo{
     width: 20px;
-    height: 20px;    
+    height: 20px;        
 }
 .container-nav {
     display: flex;
@@ -147,6 +147,21 @@ body {
     object-fit: contain;
     border-radius: 20px;
 }
+.section-hobby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list-hobby{
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
 
 .list-contacts {
     list-style-type: none;
@@ -171,12 +186,24 @@ body {
     background-color: rgba(204, 204, 204, 0.555);
 }
 
+.list-skills{
+    list-style: none;
+    padding-left: 60px;
+    margin-top: 15px;
+}
+.list-skills li{
+    left: 40px;
+}
 .project {
     list-style-type: none;
+    text-align: left;
+    margin-left: 40px;
 }
 
 .project a {
     text-decoration: none;
+    margin-left: 30px;
+    position: relative;
 }
 
 .project a:visited {
@@ -184,7 +211,16 @@ body {
 }
 
 .project::before {
-    content: '© ';
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/svg/file_type_light_js_icon_130458.svg);
+    background-repeat: no-repeat;
+    fill: #8a594c;
+}
+.project::before:hover{
+    fill: #bc14eb;
 }
 
 .project a:hover {
@@ -201,7 +237,7 @@ body {
 }
 
 .footer {
-    background-color: #fff2bab7;
+    background-color: #bebebe69;
     justify-content: space-around;
     align-items: center;
     padding: 5px;
